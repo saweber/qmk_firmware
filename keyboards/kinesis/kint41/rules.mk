@@ -15,3 +15,7 @@ BOOTLOADER = halfkay
 DEBOUNCE_TYPE = sym_eager_pk
 
 FIRMWARE_FORMAT = hex
+
+# https://github.com/kinx-project/kint/issues/77
+# Otherwise startup time for keyboard is ~10 seconds
+OPT_DEFS += -DCORTEX_ENABLE_WFI_IDLE=FALSE
