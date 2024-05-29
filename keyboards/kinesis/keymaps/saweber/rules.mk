@@ -1,0 +1,4 @@
+BOOTMAGIC_ENABLE = no       # Enable Bootmagic Lite
+COMMAND_ENABLE = yes
+NKRO_ENABLE = yes
+OPT_DEFS += -DCORTEX_ENABLE_WFI_IDLE=FALSE
